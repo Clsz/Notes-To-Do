@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		E18CBF7822C8BA9B00913F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18CBF7722C8BA9B00913F64 /* AppDelegate.swift */; };
-		E18CBF7A22C8BA9B00913F64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18CBF7922C8BA9B00913F64 /* ViewController.swift */; };
 		E18CBF7D22C8BA9B00913F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18CBF7B22C8BA9B00913F64 /* Main.storyboard */; };
 		E18CBF8022C8BA9B00913F64 /* Notes_To_Do.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E18CBF7E22C8BA9B00913F64 /* Notes_To_Do.xcdatamodeld */; };
 		E18CBF8222C8BA9C00913F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18CBF8122C8BA9C00913F64 /* Assets.xcassets */; };
 		E18CBF8522C8BA9C00913F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18CBF8322C8BA9C00913F64 /* LaunchScreen.storyboard */; };
+		E18CBF8F22C8BB4700913F64 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18CBF8E22C8BB4700913F64 /* MainViewController.swift */; };
+		E18CBF9122C8BB8700913F64 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18CBF9022C8BB8700913F64 /* NotesViewController.swift */; };
+		E18CBF9322C8BCA800913F64 /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18CBF9222C8BCA800913F64 /* NotesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E18CBF7422C8BA9B00913F64 /* Notes To-Do.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes To-Do.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18CBF7722C8BA9B00913F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E18CBF7922C8BA9B00913F64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E18CBF7C22C8BA9B00913F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E18CBF7F22C8BA9B00913F64 /* Notes_To_Do.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes_To_Do.xcdatamodel; sourceTree = "<group>"; };
 		E18CBF8122C8BA9C00913F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E18CBF8422C8BA9C00913F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E18CBF8622C8BA9C00913F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E18CBF8E22C8BB4700913F64 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E18CBF9022C8BB8700913F64 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		E18CBF9222C8BCA800913F64 /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,9 @@
 		E18CBF7622C8BA9B00913F64 /* Notes To-Do */ = {
 			isa = PBXGroup;
 			children = (
+				E18CBF8D22C8BB1000913F64 /* View */,
+				E18CBF8C22C8BB0500913F64 /* Controller */,
 				E18CBF7722C8BA9B00913F64 /* AppDelegate.swift */,
-				E18CBF7922C8BA9B00913F64 /* ViewController.swift */,
 				E18CBF7B22C8BA9B00913F64 /* Main.storyboard */,
 				E18CBF8122C8BA9C00913F64 /* Assets.xcassets */,
 				E18CBF8322C8BA9C00913F64 /* LaunchScreen.storyboard */,
@@ -65,6 +70,23 @@
 				E18CBF7E22C8BA9B00913F64 /* Notes_To_Do.xcdatamodeld */,
 			);
 			path = "Notes To-Do";
+			sourceTree = "<group>";
+		};
+		E18CBF8C22C8BB0500913F64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E18CBF9022C8BB8700913F64 /* NotesViewController.swift */,
+				E18CBF8E22C8BB4700913F64 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E18CBF8D22C8BB1000913F64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E18CBF9222C8BCA800913F64 /* NotesTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18CBF9122C8BB8700913F64 /* NotesViewController.swift in Sources */,
+				E18CBF8F22C8BB4700913F64 /* MainViewController.swift in Sources */,
+				E18CBF9322C8BCA800913F64 /* NotesTableViewCell.swift in Sources */,
 				E18CBF8022C8BA9B00913F64 /* Notes_To_Do.xcdatamodeld in Sources */,
-				E18CBF7A22C8BA9B00913F64 /* ViewController.swift in Sources */,
 				E18CBF7822C8BA9B00913F64 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
